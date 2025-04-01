@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  .dark {
+    --color-body: #121214;
+    --color-card: #202024;
+    --color-green: #00875f;
+    --color-green-light: #00b37e;
+    --color-comment: #29292e;
+    --color-divider: #323238;
+
+    --color-primary: #e1e1e6;
+    --color-secondary: #8d8d99;
+    --color-tertiary: #c4c4cc;
+  }
+}
+
+@theme {
+  --default-font-family: "Roboto", sans-serif;
+
+  --color-body: #edeeed;
+  --color-card: #dfdfdb;
+  --color-green: #00b37e;
+  --color-green-light: #00875f;
+  --color-comment: #d6d6d1;
+  --color-divider: #cdcdb7;
+
+  --color-primary: #1e1e19;
+  --color-secondary: #727276;
+  --color-tertiary: #3b3b33;
+}
+
+@layer utilities {
+  .scrollbar-transparent::-webkit-scrollbar {
+    width: 8px; /* Define a largura da scrollbar */
+  }
+
+  .scrollbar-transparent::-webkit-scrollbar-track {
+    background: transparent; /* Remove o fundo */
+  }
+
+  .scrollbar-transparent::-webkit-scrollbar-thumb {
+    background: #888; /* Define a cor do "thumb" (parte que desliza) */
+    border-radius: 5px;
+  }
+
+  /* Para Firefox */
+  .scrollbar-transparent {
+    scrollbar-color: #888 transparent;
+  }
+}
+
+:focus {
+  box-shadow: 0 0 0 1px var(--color-green-light);
+}
+
+button {
+  cursor: pointer;
+}
+
+body * {
+  outline: none;
+}
