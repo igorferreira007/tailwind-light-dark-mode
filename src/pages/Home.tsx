@@ -7,11 +7,11 @@ export function Home() {
     <div>
       <Header />
 
-      <div className="max-w-6xl w-full grid grid-cols-[16rem_1fr] gap-8 mx-auto mt-8 px-4">
+      <div className="max-w-6xl w-full grid lg:grid-cols-[16rem_1fr] gap-8 mx-auto mt-8 px-4">
         <aside>
           <Profile />
         </aside>
-        <main className="max-h-[calc(100vh-148px)] overflow-y-scroll space-y-8 scrollbar-transparent pr-4">
+        <main className="lg:max-h-[calc(100vh-148px)] lg:overflow-y-auto space-y-8 scrollbar-transparent lg:pr-4">
           <Post />
           <Post />
           <Post />
