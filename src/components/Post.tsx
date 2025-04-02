@@ -3,13 +3,15 @@ import { Avatar } from "./Avatar"
 export function Post() {
   return (
     <div className="bg-card p-10 rounded-lg">
-      <header className="flex items-center gap-4">
+      <header className="flex items-center flex-wrap gap-4">
         <Avatar />
         <div className="mr-auto">
-          <h3 className="font-bold text-primary">Igor Ferreira</h3>
+          <h3 className="font-bold text-primary text-nowrap">Igor Ferreira</h3>
           <span className="text-sm text-secondary">Full-Stack Developer</span>
         </div>
-        <span className="text-sm text-secondary">Publicado há 1h</span>
+        <span className="text-sm text-secondary text-nowrap">
+          Publicado há 1h
+        </span>
       </header>
 
       <main className="mt-6">
@@ -28,7 +30,7 @@ export function Post() {
           igorferreiradev.netlify.app/
         </a>
 
-        <div className="space-x-2 mt-8">
+        <div className="flex gap-2 flex-wrap mt-8">
           <a href="" className="text-green-light font-bold">
             #novoprojeto
           </a>
